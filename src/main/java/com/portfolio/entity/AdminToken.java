@@ -1,5 +1,6 @@
 package com.portfolio.entity;
 
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -16,7 +17,7 @@ import java.time.OffsetDateTime;
         name = "tbl_admin_tokens",
         indexes = {
                 @Index(name = "idx_admin_token_token", columnList = "token"),
-                @Index(name = "idx_admin_token_admin_id", columnList = "admin_id")
+                @Index(name = "idx_admin_token_admin_id", columnList = "fk_admin_uuid")
         }
 )
 public class AdminToken {

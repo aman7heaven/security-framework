@@ -1,8 +1,8 @@
 package com.portfolio.repository;
 
-
-
-import main.java.com.portfolio.entity.AdminToken;
+import com.portfolio.entity.AdminToken;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
